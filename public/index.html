@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>อักษราบุ๊ค — เว็บอ่านนิยายออนไลน์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="readingProgressTrack" class="reading-progress-track" style="display:none;">
+    <div id="readingProgressBar" class="reading-progress-bar"></div>
+  </div>
+
+  <div id="announcementBar" class="announcement-bar hidden"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" id="brandHomeBtn">
+        <div class="brand-mark" id="brandMark">อ</div>
+        <div>
+          <div class="brand-title" id="siteName">อักษราบุ๊ค</div>
+          <div class="brand-sub" id="siteTagline">อ่านนิยายฟรี ไม่ต้องล็อกอิน</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <button class="nav-btn active" data-nav="home">หน้าแรก</button>
+        <button class="nav-btn" data-nav="bookmarks">ชั้นหนังสือ (<span id="bookmarkCount">0</span>)</button>
+        <a href="/admin" class="admin-link" title="สำหรับผู้ดูแลระบบ (useradmin)">
+          <span>⚙</span> จัดการเว็บ (Admin)
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="appRoot"></main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-inner">
+      <div>
+        <div id="footerText" style="font-weight:600; color:var(--text);">© 2026 อักษราบุ๊ค</div>
+        <div id="contactInfo" style="font-size:0.84rem; margin-top:4px;"></div>
+      </div>
+      <div>
+        <a href="/admin" style="color:var(--accent); font-weight:600;">เข้าสู่ระบบหลังบ้าน (useradmin) →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

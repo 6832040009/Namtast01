@@ -1,0 +1,12 @@
+{
+  "name": "novel-reading-web",
+  "version": "1.0.0",
+  "description": "เว็บไซต์อ่านนิยายออนไลน์ พร้อมระบบหลังบ้านสำหรับ useradmin",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
